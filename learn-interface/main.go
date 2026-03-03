@@ -34,9 +34,9 @@ func formatAmount(amount float64, email string) string {
 
 func main() {
 	paypal := Paypal{Name: "John Doe", Email: "abc@gmail.com"}
-	fmt.Println(paypal.Pay(100.0, paypal.Email))
+	// fmt.Println(paypal.Pay(100.0, paypal.Email))
 	fmt.Println(paypal.CreateOrder(100.0, paypal.Email))
-	paypal.ProcessPayment(150.0, paypal.Email)
-	fmt.Println(CreatePayment(paypal, 200.0, paypal.Email))
+	fmt.Println(paypal.ProcessPayment(150.0, paypal.Email))
+	// fmt.Println(CreatePayment(paypal, 200.0, paypal.Email))
 	
 }
